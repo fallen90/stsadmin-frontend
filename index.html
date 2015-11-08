@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>STSADMIN</title>
+    <!-- Assets -->
+    <link href="assets/css/app.css" rel="stylesheet">
+
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="vendor/ionic/css/ionic.css"></script>
+
+    <script src="vendor/ionic/js/ionic.bundle.js"></script>
+
+    <!-- Application Files -->
+    <script src="app/app.js"></script>
+
+  </head>
+  <body ng-app="stsadmin">
+    <div class="container">
+      <div class="header">
+        <div class="banner"></div>
+        <div class="navigation">
+          <ul class="navigation-links">
+            <li><a ui-sref="list" ui-sref-active="active" class="active">Student List</a></li>
+            <li><a href="#index">Home</a></li>
+            <li><a href="#index">Home</a></li>
+            <li><a href="#index">Home</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="content" ui-view></div>
+      <div class="footer">
+        <copyright>Copyright &copy; 2015</copyright>
+        <span>[<a href="#top">back to top</a>]</span>
+      </div>
+    </div>
+  </body>
+  <script>
+  // setInterval(function(){
+  //   window.location.href = "/";
+  // },1000);
+  </script>
+</html>
